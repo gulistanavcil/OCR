@@ -1,0 +1,6 @@
+[Ilabel num] = bwlabel(Ifill);
+disp(num);
+Iprops = regionprops(Ilabel);
+Ibox = [Iprops.BoundingBox];
+Ibox = reshape(Ibox,[8 100]);
+imshow(I)
